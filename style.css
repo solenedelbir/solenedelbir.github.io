@@ -62,10 +62,11 @@ nav a {
 }
 
 .liens {
-    /* Magie : les marges auto à gauche ET à droite poussent le bloc au centre exact */
-    margin-left: auto;
-    margin-right: auto;
-} 
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 2; /* On lui donne un peu plus de place */
+}
 
 .logo, .contact {
     flex: 1; /* Le logo prend de l'espace imaginaire à gauche */
@@ -73,12 +74,12 @@ nav a {
 
 .contact {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .logo {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 /* On ajuste le container principal pour qu'il ne soit pas collé au header */
