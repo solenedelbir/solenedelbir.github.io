@@ -47,6 +47,9 @@ nav {
     display: flex;
     justify-content: center; /* Centre les liens */
     gap: 30px; /* Espace entre les noms de pages */
+    background-color: #000;
+    padding: 0 5%;
+    height: 70px;
 }
 
 /* Style des liens (tes noms de pages) */
@@ -58,9 +61,24 @@ nav a {
     transition: color 0.3s;
 }
 
-/* Effet au survol */
-nav a:hover {
-    color: #ff0000; /* Rappel du rouge que tu aimes au survol */
+.liens {
+    /* Magie : les marges auto à gauche ET à droite poussent le bloc au centre exact */
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.logo, .contact {
+    flex: 1; /* Le logo prend de l'espace imaginaire à gauche */
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* On ajuste le container principal pour qu'il ne soit pas collé au header */
