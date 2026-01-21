@@ -7,3 +7,50 @@ body {
     color: #333;
     display: block; /* On change le 'flex' précédent pour que le header reste en haut */
 }
+
+/* Style de l'entête */
+header {
+  background-color: #000000;
+    width: 100%;            /* Légèrement moins que 100% pour l'effet flottant */
+    margin: 5px 0 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Style de la navigation */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #000;
+    padding: 10px 5%;
+}
+
+/* Style des liens (tes noms de pages) */
+nav a {
+    color: #ffffff; /* Typo blanche */
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.liens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex: 2; /* On lui donne un peu plus de place */
+}
+
+.logo, .contact {
+    flex: 1; /* Le logo prend de l'espace imaginaire à gauche */
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
