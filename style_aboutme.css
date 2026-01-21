@@ -1,6 +1,4 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -32,6 +30,8 @@ nav a {
     font-weight: bold;
     font-size: 1.1rem;
     transition: color 0.3s;
+    text-transform: capitalize;
+    font-family: Sackers Gothic;
 }
 
 .liens {
