@@ -33,7 +33,7 @@ nav a {
     font-weight: bold;
     font-size: 1.1rem;
     transition: color 0.3s;
-    text-transform: capitalize;
+    text-transform:  uppercase;
     font-family: Georgia;
 }
 
